@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include ("header.php") ?>
+<!--<?php include ("header.php") ?>-->
+        <div id="includedContent"></div>
+
+    <script>
+        // Use JavaScript to load content from an external HTML file
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("includedContent").innerHTML = this.responseText;
+            }
+        };
+        xhttp.open("GET", "header.html", true); // Replace "header.html" with the path to your HTML file
+        xhttp.send();
+    </script>
+    
     <div class="container-fluid">
         <div id="about" class="row about-section">
 
