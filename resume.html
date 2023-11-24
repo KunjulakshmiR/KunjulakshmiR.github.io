@@ -515,4 +515,22 @@ input#img-6:checked ~ .modal-window {
 <div class="modal-overlay"></div>
 </div>-->  </div>  
     </section>
-    <?php include ("footer.php") ?>  
+    
+      <div id="footerContainer">
+        <!-- The footer content will be inserted here using JavaScript -->
+    </div>
+
+    <script>
+        // Use JavaScript to load and insert the footer content
+        var footerContainer = document.getElementById("footerContainer");
+        var xhr = new XMLHttpRequest();
+
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                footerContainer.innerHTML = xhr.responseText;
+            }
+        };
+
+        xhr.open("GET", "footer.html", true);
+        xhr.send();
+    </script>
