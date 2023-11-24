@@ -28,7 +28,7 @@
 }
 
 
-.grid-item1,.grid-item2,.grid-item3,.grid-item4, {
+.grid-item {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -41,7 +41,7 @@
 	box-shadow: 1px 1px 3px 0 #0009;
 }
 
-.grid-item1,.grid-item2,.grid-item3,.grid-item4:hover {
+.grid-item:hover {
 	transform: scale(1.02);
 }
 
@@ -55,56 +55,56 @@
 }
 
 @media (min-width: 600px) {
-	.wide1, .wide2 {
+	.wide {
 		grid-column: span 2;
 	}
 
-	.tall1, .tall2 {
+	.tall {
 		grid-row: span 2;
 	}
 }
 
 
-.grid-item1:nth-child(3),
+.grid-item:nth-child(3),
 input#img-3:checked ~ .modal-window {
 	background-image: url(assets/imgs/Republicday.jpg);
 	background-position: 55% center;
 }
 
 
-.grid-item2:nth-child(4),
+.grid-item:nth-child(4),
 input#img-4:checked ~ .modal-window {
 	background-image: url(assets/imgs/Kyrat1.JPG);
 }
 
-.grid-item wide tall1:nth-child(5),
+.grid-item wide tall:nth-child(5),
 input#img-5:checked ~ .modal-window {
 	background-image: url(assets/imgs/B.JPG);
 }
 
-.grid-item3:nth-child(6),
+.grid-item:nth-child(6),
 input#img-6:checked ~ .modal-window {
 	background-image: url(assets/imgs/IICM1.jpg);
 }
 
-.grid-item tall1:nth-child(7),
+.grid-item tall:nth-child(7),
 input#img-7:checked ~ .modal-window {
 	background-image: url(assets/imgs/Folk.JPG);
 }
 
-.grid-item wide tall2:nth-child(8),
+.grid-item wide tall:nth-child(8),
 input#img-8:checked ~ .modal-window {
 	background-image: url(assets/imgs/La vida.jpg);
 	background-position: 85% center;
 }
 
-.grid-item4:nth-child(9),
+.grid-item:nth-child(9),
 input#img-9:checked ~ .modal-window {
 	background-image: url(assets/imgs/IMG-20230510-WA0001.jpg);
 }
 
 
-.grid-item tall2:nth-child(19),
+.grid-item tall:nth-child(19),
 input#img-19:checked ~ .modal-window {
 	background-image: url(assets/imgs/KyratF2.JPG);
 }
@@ -367,15 +367,15 @@ input#img-19:checked ~ .modal-window {
 <div class="grid-container">
 	
 	
-	<div class="grid-item tall1"></div>
-	<div class="grid-item1"></div>
-	<div class="grid-item wide tall1"></div>
+	<div class="grid-item tall"></div>
+	<div class="grid-item"></div>
+	<div class="grid-item wide tall"></div>
 
-	<div class="grid-item wide tall2"></div>
-	<div class="grid-item tall2"></div>
-	<div class="grid-item2"></div>
-	<div class="grid-item3 "></div>
-	<div class="grid-item4"></div>
+	<div class="grid-item wide tall"></div>
+	<div class="grid-item tall"></div>
+	<div class="grid-item"></div>
+	<div class="grid-item "></div>
+	<div class="grid-item"></div>
 
 
 <div class="modal-window"></div>
