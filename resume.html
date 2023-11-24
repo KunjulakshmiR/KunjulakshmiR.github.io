@@ -17,6 +17,91 @@
           .section {
     padding: 10px 0; 
 }
+	     * { 
+  box-sizing: border-box; 
+  transition: all 0.125s ease 0s;
+}
+
+img { 
+  width: 100%;
+}
+
+.gallery {
+  display: flex;
+  padding: 5px;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 25%;
+  padding: 5px;
+
+}
+
+.column figure {
+  width: 100%;
+  margin: 0;
+  position: relative;
+}
+
+.column figure img {
+  margin-top: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.column figure:active {
+  height: auto; 
+  width: auto;
+  max-width: 80%;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  border: 10px solid #fff;
+  margin: 0px;
+  z-index: 33;
+  box-shadow: 0 0 1000px 1000px #fff8;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.column figure:active img {
+  margin-top: 0;
+  margin-bottom: -4px;
+}
+
+figcaption {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: Arial, Helvetica, serif;
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  mix-blend-mode: screen;
+  background: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  opacity: 0.25;
+}
+
+.column figure:hover figcaption,
+.column figure:active figcaption {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .column {
+    flex: 50%;
+  }
+}
+
+@media (max-width: 500px) {
+  .column {
+    flex: 100%;
+  }
+}
 
           :root {
 	--pri: #ffffff;
@@ -364,7 +449,53 @@ input#img-6:checked ~ .modal-window {
      <section class="section" id="service">
         <div class="container">
             <h2 class="mb-5 pb-4"><span class="text-danger">Co-curricular</span> Activities</h2>
+<div class="gallery">
 
+	<div class="column">
+		<figure>
+      <img src="assets/imgs/Folk.JPG"/>
+      <figcaption>Jungle</figcaption>
+    </figure> 
+    <figure>
+      <img src="assets/imgs/Republicday.jpg"/>
+      <figcaption>Mountain</figcaption>
+    </figure> 
+	</div>
+	<div class="column">
+		<figure>
+      <img src="assets/imgs/Kyrat1.JPG"/>
+      <figcaption>Iceland</figcaption>
+    </figure>  
+		<figure>
+      <img src="assets/imgs/La vida.jpg"/>
+      <figcaption>River</figcaption>
+    </figure>  
+ 
+	</div>
+	<div class="column">
+		<figure>
+      <img src="assets/imgs/B.JPG"/>
+      <figcaption>Boreal</figcaption> 
+    </figure> 
+    <figure>
+      <img src="assets/imgs/KyratF2.JPG"/>
+      <figcaption>Lake</figcaption>
+    </figure> 
+
+	</div>
+	<div class="column">
+		<figure>
+      <img src="assets/imgs/IMG-20230510-WA0001.jpg"/>
+      <figcaption>Ocean</figcaption>
+    </figure>  
+		<figure>
+      <img src="assets/imgs/IICM1.jpg"/>
+      <figcaption>Savanna</figcaption>
+    </figure>  
+
+
+	</div>
+</div>
 
 <div class="grid-container">
 	
