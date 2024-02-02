@@ -1,1 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+     <div id="includedContent"></div>
 
+    <script>
+        // Use JavaScript to load content from an external HTML file
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("includedContent").innerHTML = this.responseText;
+            }
+        };
+        xhttp.open("GET", "header.html", true); // Replace "header.html" with the path to your HTML file
+        xhttp.send();
+    </script>
+  <style>
+     body{
+    font-family:'roboto';
+		padding-top:30px;
+  }
+  .about-card{
+    background-image: linear-gradient(to right, #f0297f , #fcd4e6);
+    padding:20px;
+    border-bottom:35px solid #eba9ce;
+    max-width:700px;
+    display:block;
+    margin:auto;
+    color:black;
+  }
+.col {
+  float: left;
+  padding: 10px;
+  height: 90px;
+  line-height:10px;
+  }
+  .col:nth-child(1){width: 24.53%;}
+  .col:nth-child(2){width: 26.33%;}
+  .col:nth-child(3){width: 40%;}
+  .col:not(:last-child){border-right:2px solid white;}
+
+/* Clear floats after the columns */
+.about-card:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+  .col h2,.col strong{
+  margin-top:0px;
+  font-weight:400;
+  }
+  .col strong{
+ color:#666;
+    font-weight:300;
+    text-transform:uppercase;
+    line-height:1em;
+    font-size:14px
+  }
+  .avatar{
+  height:140px;
+  width:140px;
+ margin-top:-15px;
+  padding:5px;
+  }
+  .avatar img{
+  width:100%;
+  background:#fff;
+    border-radius:50%;
+    border:5px solid #fff;
+  }
+  .inline-social{
+    margin-top:25px;
+  }
+  .inline-social a{
+    text-decoration:none;
+    color:#f0297f;
+    background:#fff;
+    padding: 0px 5px;
+    font-size:17px;
+    text-align:center;
+    border-radius:50px;
+    margin-right:5%;
+  }
+  .inline-social-long{
+  line-height:1.5em;
+  }.inline-social-long a{color:black;text-decoration:none;font-size:13px}
+  .inline-social-long span{
+  color:#f0297f;
+  text-decoration:none;
+  font-size:20px;
+  display:block;
+  }
+    .inline-social-long span i{
+      margin:0px 10px;
+  }
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .about-card{height:auto;text-align:center}
+  .col:nth-child(1),.col:nth-child(2),.col:nth-child(3){width: 100%;border:none}
+  .avatar{margin:auto}
+  .col h2,.col strong{
+   display:inline-block;
+    margin-top:50px
+  }.inline-social{margin:0px 0px;}
+}
+  </style>
+
+<section class="section" id="blog">
+        <div class="container">
+            <h1 class="mb-5"><span class="text-danger">Get in</span> touch</h1>
+          <div class="about-card">
+  <div class="col">
+<div class='avatar'>
+  <img src='assets/imgs/klr.JPG' alt='Avatar'/>
+    </div>
+  </div>
+  <div class="col">
+    <h2>Kunjulakshmi R</h2>
+    <strong>Bioinformatics enthusiast</strong>
+    <div class='inline-social'>
+      <a href=''><i class='fab fa-linkedin'></i></a>
+      <a href=''><i class='fab fa-twitter'></i></a>
+      <a href=''><i class='fab fa-github'></i></a>
+    </div>
+  </div>
+  <div class="col">
+<div class='inline-social-long'>
+      <span><i class='fas fa-compass'></i> <a href=''>Kerala, India ( 688506 )</a></span>
+      <span><i class='fas fa-envelope'></i> <a href=''>kunjulakshmiperumal@gmail.com</a></span>
+    </div>
+  </div>
+</div>
+    
+
+        </div>
+</section>
+
+      <div id="footerContainer">
+        <!-- The footer content will be inserted here using JavaScript -->
+    </div>
+
+    <script>
+        // Use JavaScript to load and insert the footer content
+        var footerContainer = document.getElementById("footerContainer");
+        var xhr = new XMLHttpRequest();
+
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                footerContainer.innerHTML = xhr.responseText;
+            }
+        };
+
+        xhr.open("GET", "footer.html", true);
+        xhr.send();
+    </script>
