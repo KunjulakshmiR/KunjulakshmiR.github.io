@@ -17,6 +17,29 @@
      body{
     font-family:'roboto';
   }
+	  .wrap1 {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	max-width:auto;
+  margin:auto;
+}
+.main1 {
+	flex: 1;
+	
+}
+@media screen and (max-width:680px){
+	.main1 {flex-direction:column;}	
+}
+     @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+           body{
+             background: white;
+             font-family: sans-serif;
+           }
+           input[type=radio] {
+  opacity: 0;
+}
+
   .about-card{
     background-image: linear-gradient(to right, #3D3C3B , #838281);
     padding:20px;
@@ -104,6 +127,8 @@
   </style>
 
 <section class="section" id="blog">
+	<main class="main1">
+<div class="wrap1">
         <div class="container">
             <h1 class="mb-5"><span class="text-danger">Get in</span> touch</h1>
           <div class="about-card">
@@ -138,7 +163,7 @@
 </div>
     
 
-        </div>
+        </div></main></div>
 </section>
 
       <div id="footerContainer">
