@@ -13,13 +13,110 @@
         xhttp.open("GET", "header.html", true); // Replace "header.html" with the path to your HTML file
         xhttp.send();
     </script>
-    <section class="section bg-custom-gray" id="portfolio">
+<style>
+  .lorem_ipsum_text{
+    font-size: 16px;
+    text-align: justify;
+    margin-top: 0px;
+    line-height: initial;
+  }
+
+  </style>
+<section class="section" id="blog">
         <div class="container">
             <h1 class="mb-5"><span class="text-danger">Research</span> interests</h1>
-            <div class="portfolio">
-               
+            <div class="Recurments_section_2">
+      <div class="container">
+        <div class="product_section">
+          <div class="row padding_top_0">
+            <!--<div class="col-sm-2">
+              <div class="one_text"><a href="#">01</a></div>
+            </div>-->
+            <div class="container">
+              <h3 class="software_text">Genome-Wide Association Studies (GWAS)</h3>
+                 <p class="lorem_ipsum_text">
+         Genome-Wide Association Studies (GWAS) represent a cornerstone in contemporary genetic research, 
+                      offering a comprehensive approach to unraveling the genetic basis of complex traits and diseases. 
+                      GWAS involves scanning the entire genome for variations in DNA sequences to identify associations between specific genetic markers and phenotypic traits. 
+                      This approach has significantly advanced our understanding of the heritability of various conditions, providing critical insights into disease susceptibility and treatment responses. 
+                      As a prospective Ph.D. student in bioinformatics, my research interest in GWAS lies in developing and applying innovative computational methods to efficiently analyze large-scale genomic data. 
+                      I aim to contribute to refining the accuracy and interpretability of GWAS findings, 
+                      ultimately enhancing our ability to decipher the intricate interplay between genetics and complex phenotypes.</p>
              
-            </div>  
-        </div>            
-    </section>
-    <!-- End of portfolio section -->
+            </div>
+            <!--<div class="col-sm-2">
+            <button class="apply_now">Apply Now</button>
+            </div>-->
+          </div>
+      </div>
+    </div>
+        </div>
+             <hr class="new">
+   
+                    <div class="Recurments_section_2">
+      <div class="container">
+        <div class="product_section">
+          <div class="row padding_top_0">
+            <!--<div class="col-sm-2">
+              <div class="one_text"><a href="https://project.iith.ac.in/cgntlab/aagingbase/index.php">01</a></div>
+            </div>-->
+            <div class="container">
+              <h3 class="software_text">Single-cell RNA sequencing (scRNA-seq)</h3>
+                 <p class="lorem_ipsum_text">
+              Single-cell RNA sequencing (scRNA-seq) has emerged as a transformative technology in the field of genomics, allowing 
+                      for unprecedented insights into the heterogeneity of gene expression at the individual cell level. 
+                      This revolutionary technique enables the characterization of diverse cell populations within complex tissues, shedding light on cellular diversity, rare cell types, and dynamic changes in gene expression patterns. 
+                      My research interest in single-cell RNA-seq analysis centers on the development and optimization of computational methodologies to extract meaningful information from high-dimensional single-cell data. 
+                      I am particularly intrigued by the challenges posed by noisy data, sparsity, and the need for sophisticated algorithms to infer cell states, trajectories, and interactions. Through my Ph.D. studies, I aspire to contribute to the refinement of analytical tools, leveraging machine learning and statistical approaches, to unravel the intricacies of cellular 
+                      heterogeneity and uncover novel biological insights that may have implications for understanding disease mechanisms and designing targeted therapeutic strategies.
+              </p>
+            </div>
+          </div>
+      </div>
+    </div>
+        </div>
+               <hr class="new">
+                    <div class="Recurments_section_2">
+      <div class="container">
+        <div class="product_section">
+          <div class="row padding_top_0">
+            <!--<div class="col-sm-2">
+              <div class="one_text"><a href="#">01</a></div>
+            </div>-->
+            <div class="container">
+              <h3 class="software_text">AI/ML methods for biological predictions</h3>
+              <p class="lorem_ipsum_text">
+              
+AI and Machine Learning (ML) play a transformative role in decoding biological intricacies, particularly in genomics and drug discovery. In genomics, these methodologies excel at pinpointing disease-related genetic variations and unraveling complex gene expression patterns. This precision in analyzing high-throughput sequencing data enables the identification of subtle genetic markers associated with diseases, facilitating advancements in personalized medicine. Additionally, in drug discovery, AI/ML models streamline the identification of potential candidates by analyzing molecular structures and predicting interactions.
+              </p>
+                 <p class="lorem_ipsum_text">
+As a prospective Ph.D. student in bioinformatics, my research focus centers on advancing AI/ML techniques tailored for accurate and applicable biological predictions. The emphasis on interpretability in these models is crucial, fostering a deeper understanding of the biological mechanisms and facilitating the translation of computational insights into actionable outcomes in real-world biomedical applications. Through this research, my goal is to contribute to the development of robust, interpretable AI/ML tools, bridging the gap between computational advancements and their practical implications for healthcare outcomes and biomedical research.
+              </p>
+            </div>
+             
+          </div>
+      </div>
+    </div>
+        </div>
+               <hr class="new">
+       
+</section>
+
+      <div id="footerContainer">
+        <!-- The footer content will be inserted here using JavaScript -->
+    </div>
+
+    <script>
+        // Use JavaScript to load and insert the footer content
+        var footerContainer = document.getElementById("footerContainer");
+        var xhr = new XMLHttpRequest();
+
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                footerContainer.innerHTML = xhr.responseText;
+            }
+        };
+
+        xhr.open("GET", "footer.html", true);
+        xhr.send();
+    </script>
